@@ -1,6 +1,6 @@
-import data from "./data/data.json";
-import Result from "./components/result";
-import Summary from "./components/summary";
+import { data } from "./components";
+import { Result } from "./components";
+import { Summary } from "./components";
 
 function App() {
   const scores = data.map((item) => item.score);
