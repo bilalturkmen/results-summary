@@ -1,10 +1,8 @@
-import { data } from "./components";
-import { Result } from "./components";
-import { Summary } from "./components";
+import { data, Result, Summary } from "./components";
 
 function App() {
-  const scores = data.map((item) => item.score);
-  const averageScore = scores.reduce((a, b) => a + b, 0) / scores.length;
+  const averageScore =
+    data.reduce((acc, item) => acc + item.score, 0) / data.length;
   return (
     <main className="card">
       <h1 className="sr-only">Results summary component</h1>
